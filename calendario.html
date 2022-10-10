@@ -1,287 +1,194 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <title></title>
-    <meta name="description" content="" />
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIGAA</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <!--NAVBAR MENU TOP-->
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!--NAVBAR MENU TOP-->
+        <!--buscador-->
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown button
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-md-1 offset-md-1"><div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-2 offset-md-1">
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                        <button type="button" class="btn btn-outline-primary">enviar</button>
+                        <a href="">apagar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--buscador-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">-</div>
+                <div class="col-md-3">-</div>
+                <div class="col-md-3">-</div>
+                <div class="col-md-3">-</div>
+            </div>
+            <div class="div">__________________________________</div>
+            <div class="row">
+                <div class="col-md-3">-</div>
+                <div class="col-md-3">-</div>
+                <div class="col-md-3">-</div>
+                <div class="col-md-3">-</div>
+            </div>
+            <div class="div">__________________________________</div>
+            <div class="row">
+                <div class="col-md-3">-</div>
+                <div class="col-md-3">-</div>
+                <div class="col-md-3">-</div>
+                <div class="col-md-3">-</div>
+            </div>
+        </div>
 
-    <link rel="stylesheet" href="css/calendario.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap"
-    />
-  </head>
-  <body>
-    <div class="calendario-div">
-      <section class="meses-section">
-        <div class="janeiro-card-div">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">JANEIRO</b>
+
+
+
+
+        <!-- footer -->
+        <div class="container-fluid marcador copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="">Acesse a Central de Ajuda</a>
+                </div>     
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <p>
+                        <h3>Empresa</h3>
+                        Quem somos 
+                        O que oferecemos 
+                        Newsroom 
+                        Investidores 
+                        Blog
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <p>
+                        <h3>Empresa</h3>
+                        Quem somos 
+                        O que oferecemos 
+                        Newsroom 
+                        Investidores 
+                        Blog
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <p>
+                        <h3>Empresa</h3>
+                        Quem somos 
+                        O que oferecemos 
+                        Newsroom 
+                        Investidores 
+                        Blog
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <p>
+                        <h3>Empresa</h3>
+                        Quem somos 
+                        O que oferecemos 
+                        Newsroom 
+                        Investidores 
+                        Blog
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    ICONES
+                </div>
+                <div class="col-md-3">
+                    <a href="">Links</a>
+                    <a href="">Links</a>
+                    <a href="">Links</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-5">
+                    @ 2022 COG - Interprise System
+                </div>
+            </div>
         </div>
-        <div class="janeiro-card-div1">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">FEVEREIRO</b>
-        </div>
-        <div class="janeiro-card-div2">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">ABRIL</b>
-        </div>
-        <div class="janeiro-card-div3">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">MARÇO</b>
-        </div>
-        <div class="janeiro-card-div4">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">SETEMBRO</b>
-        </div>
-        <div class="janeiro-card-div5">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">OUTUBRO</b>
-        </div>
-        <div class="janeiro-card-div6">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">DEZEMBRO</b>
-        </div>
-        <div class="janeiro-card-div7">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">NOVEMBRO</b>
-        </div>
-        <div class="janeiro-card-div8">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">MAIO</b>
-        </div>
-        <div class="janeiro-card-div9">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">JUNHO</b>
-        </div>
-        <div class="janeiro-card-div10">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">AGOSTO</b>
-        </div>
-        <div class="janeiro-card-div11">
-          <div class="rectangle-div13"></div>
-          <b class="dia-25-feriado-municipal">Dia 25 - Feriado Municipal</b
-          ><b class="dia-16-dia-da-beterraba">Dia 16 - Dia da beterraba</b
-          ><img
-            class="rectangle-icon5"
-            alt=""
-            src="public/rectangle-10@2x.png"
-          /><b class="dia-1-folclore">Dia 1 - Folclore</b
-          ><b class="janeiro-b">JULHO</b>
-        </div>
-      </section>
-      <div class="rectangle-div25"></div>
-      <div class="rectangle-div26"></div>
-      <div class="navbar2-div1">
-        <div class="rectangle-div27"></div>
-        <div class="group-div7">
-          <div class="rectangle-div28"></div>
-          <img class="vector-icon5" alt="" src="public/vector-62.svg" />
-          <div class="todos-div">Todos</div>
-          <div class="cursos-div1">Cursos:</div>
-        </div>
-        <div class="filtros-div1"><p class="filtros-p1">FILTROS:</p></div>
-        <div class="ano-div2">
-          <button class="rectangle-button5" autofocus></button
-          ><img class="vector-icon5" alt="" src="public/vector-51.svg" />
-          <div class="div2">------</div>
-          <div class="ano-div3">Ano:</div>
-        </div>
-        <div class="botoes-filtros-div1">
-          <button class="botao-enviar-button1" autofocus>
-            <div class="rectangle-div29"></div>
-            <div class="enviar-div1">Enviar</div></button
-          ><button class="apagar-button1" autofocus>Apagar</button>
-        </div>
-      </div>
-      <div class="navbar-div1">
-        <div class="rectangle-div30"></div>
-        <div class="group-div8">
-          <button class="cursos-button1" autofocus>
-            <div class="rectangle-div31"></div>
-            <div class="cursos-div2">
-              <p class="filtros-p1">Cursos</p>
-            </div></button
-          ><button class="extenso-button1" autofocus>
-            <div class="rectangle-div31"></div>
-            <div class="extenso-div2">Extensão</div></button
-          ><button class="acervo-button1" autofocus>
-            <div class="rectangle-div31"></div>
-            <div class="acervo-div1">
-              <p class="filtros-p1">Acervo</p>
-            </div></button
-          ><button class="departamentos-button1" autofocus>
-            <div class="rectangle-div31"></div>
-            <div class="departamentos-div1">
-              <p class="filtros-p1">Departamentos</p>
-            </div></button
-          ><button class="calendario-button1">
-            <div class="rectangle-div35"></div>
-            <div class="calendrio-div1">Calendário</div></button
-          ><button class="destaque-button1">
-            <div class="rectangle-div31"></div>
-            <div class="destaques-div1">Destaques</div>
-          </button>
-        </div>
-      </div>
-      <footer class="footer1">
-        <div class="rectangle-div37"></div>
-        <img class="image-3-icon1" alt="" src="public/image-3@2x.png" /><b
-          class="cidadania-global1"
-          >Cidadania global</b
-        >
-        <div class="produtos-div1">
-          <p class="filtros-p1"><b>Produtos</b><span class="span6"> </span></p>
-        </div>
-        <div class="empresa-div1">
-          <p class="filtros-p1"><b>Empresa</b><span class="span6"> </span></p>
-        </div>
-        <div class="viaje-dirigir-fazer-entregas-f1">
-          <p class="filtros-p1">Viaje</p>
-          <p class="filtros-p1"></p>
-          <p class="filtros-p1">Dirigir</p>
-          <p class="filtros-p1"></p>
-          <p class="filtros-p1">Fazer entregas</p>
-          <p class="filtros-p1"></p>
-          <p class="filtros-p1">Faça pedidos</p>
-          <p class="filtros-p1"></p>
-          <p class="uber-para-empresas1">Uber para Empresas</p>
-        </div>
-        <div class="quem-somos-o-que-oferecemos-ne1">
-          <p class="filtros-p1">&nbsp;</p>
-          <p class="filtros-p1">Quem somos</p>
-          <p class="filtros-p1"></p>
-          <p class="filtros-p1">O que oferecemos</p>
-          <p class="filtros-p1"></p>
-          <p class="filtros-p1">Newsroom</p>
-          <p class="filtros-p1"></p>
-          <p class="filtros-p1">Investidores</p>
-          <p class="filtros-p1"></p>
-          <p class="filtros-p1">Blog</p>
-          <p class="uber-para-empresas1"></p>
-        </div>
-        <div class="acesse-a-central-de-ajuda1">Acesse a Central de Ajuda</div>
-        <b class="sigaa-sistema-integrado-de-g1"
-          >SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</b
-        >
-        <div class="acessibilidade-div1">
-          <p class="filtros-p1">Acessibilidade</p>
-        </div>
-        <div class="termos-div1">Termos</div>
-        <div class="segurana-diversidade-e-inclus1">
-          <p class="filtros-p1">Segurança</p>
-          <p class="filtros-p1"></p>
-          <p class="uber-para-empresas1">Diversidade e inclusão</p>
-        </div>
-        <b class="viaje-b1">Viaje</b>
-        <div class="aeroportos-cidades-div1">
-          <p class="filtros-p1">Aeroportos</p>
-          <p class="filtros-p1"></p>
-          <p class="uber-para-empresas1">Cidades</p>
-        </div>
-        <div class="cog-interprise-system1">@ 2022 COG - Interprise System</div>
-        <div class="privacidade-div1">
-          <p class="filtros-p1">Privacidade</p>
-        </div>
-      </footer>
-      <header class="header1">
-        <header class="rectangle-header1"></header>
-        <img class="image-1-icon1" alt="" src="public/image-1@2x.png" /><button
-          class="pessoa-com-defi1"
-          autofocus
-        >
-          <img class="image-2-icon1" alt="" src="public/image-2@2x.png" />
-          <div class="acessar-div1">Acessar</div></button
-        ><button class="botao-entrar-button1" autofocus>
-          <div class="rectangle-div38"></div>
-          <div class="entrar-div1">Entrar</div></button
-        ><b class="sigaa-b1">SIGAA</b>
-        <div class="sistema-integrado-de-gesto-de1">
-          <p class="filtros-p1">Sistema Integrado de Gestão de</p>
-          <p class="uber-para-empresas1">Atividades Acadêmicas</p>
-        </div>
-        <i class="ufrn-i1">UFRN</i
-        ><i class="natal-14072022-i1">Natal 14/07/2022</i>
-      </header>
-    </div>
-  </body>
+        <!-- footer -->
+    </body>
 </html>

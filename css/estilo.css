@@ -1,0 +1,43 @@
+.marcador {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.fontes {
+    color: white;
+    font-size: 13px;
+}
+
+
+
+a {
+    text-decoration:none;
+    color: white;
+}
+
+
+.texto_footer {
+    font-size: 13px;
+}
+
+H3 {
+    margin: 0;
+}
+
+.copyright {
+  
+    bottom: 0;
+}
+
+.TEXTD{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 992px) {
+    .image2{
+        display: none;
+    }
+    .TEXTD{
+        display: none;
+    }
+    }
