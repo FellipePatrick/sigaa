@@ -1,7 +1,10 @@
 .marcador {
     background-color: rgb(0, 0, 0);
     color: white;
+    margin-top: 20px;
 }
+
+
 
 .fontes {
     color: white;
@@ -10,7 +13,7 @@
 
 
 
-a {
+footer a {
     text-decoration:none;
     color: white;
 }
