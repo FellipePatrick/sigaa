@@ -48,59 +48,64 @@
               </div>
             </div>
           </nav>
-        <div class="container-fluid py-3"> 
-            <div class="row">
-                <div class="offset-lg-1 offset-md-1  offset-sm-1 col-lg-10"> 
-                    <a href="/login.html" >
-                        <img src="/img/seta.png" width="25px" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>  
         <section class="text-center marcador_section text-lg-start ">
-            <div class="container py-4">
+            <div class="container py-4">      
             <div class="row g-0 align-items-center">
                 <div class=" offset-lg-1  col-lg-6 mb-5 mb-lg-0">
-                <div class="card cascading-right">
+                  <div class="card cascading-right">
+                    
                     <div class="card-body p-5 shadow-5 text-center">
-                    <h2 class="fw-bold mb-5">Cadastre-se</h2>
-                    <form>
-                        <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="form-outline">
-                            <input type="text" id="form3Example1" class="form-control" />
-                            <label class="form-label" for="form3Example1">Primeiro nome</label>
-                            </div>
+                    <h5 class="fw-bold mb-5" style="letter-spacing: 3px;">Cadastre-se</h5>
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Rua Principal, 1234">
+                      </div>
+                        <div class="col-6">
+                          <label for="inputAddress2" class="form-label">Telefone</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="(84) 9 0000-0000">
                         </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="form-outline">
-                            <input type="text" id="form3Example2" class="form-control" />
-                            <label class="form-label" for="form3Example2">Sobrenome</label>
-                            </div>
+                        <div class="col-6">
+                          <label for="inputAddress2" class="form-label">Telefone</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="(84) 9 0000-0000">
                         </div>
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">Estado</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>selecione</option>
+                          <option>RN</option>
+                          <option>BA</option>
+                          <option>CE</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">CEP</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Notifique-me
+                          </label>
                         </div>
-                        <div class="form-outline mb-4">
-                        <input type="email" id="form3Example3" class="form-control" />
-                        <label class="form-label" for="form3Example3">Email </label>
-                        </div>
-                        <div class="form-outline mb-4">
-                        <input type="password" id="form3Example4" class="form-control" />
-                        <label class="form-label" for="form3Example4">Senha</label>
-                        </div>
-                        <div class="form-outline mb-4">
-                            <input type="password" id="form3Example4" class="form-control" />
-                            <label class="form-label" for="form3Example4">Repetir senha</label>
-                        </div>
-                        <div class="form-check d-flex justify-content-center mb-4">
-                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                        <label class="form-check-label" for="form2Example33">
-                            Envie-me notificação
-                        </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block mb-4">
-                        <a href="">cadastrar</a>
-                        </button>
-                     </form>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">cadastrar</button>
+                      </div>
+                    </form>
                     </div>
                  </div>
                 </div>
@@ -111,53 +116,55 @@
              </div>
             </div>
         </section>
+       <footer class="mb-auto">
         <div class="container-fluid marcador copyright py-3">
-            <div class="row py-3 px-3">
-                <div class="col-md-6 fw-bold">
-                    <p>SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
-                </div>
-            </div>
-            <div class="row px-3 fw-semibold">
-                <div class="col-md-6">
-                    <a href="">Acesse a Central de Ajuda</a>
-                </div>     
-            </div>
-            <div class="row px-3 texto_footer d-flex">
-                
-              <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
-                    <h6 class="fw-bold">Docentes</h6>
-                    <a href="">Acesse Paginas</a>
-                    <a href="">Consulte chefes</a>
-                    <a href="">Coordenadores</a>
-            </div>
+          <div class="row py-3 px-3">
+              <div class="col-md-6 fw-bold">
+                  <p>SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
+              </div>
+          </div>
+          <div class="row px-3 fw-semibold">
+              <div class="col-md-6">
+                  <a href="">Acesse a Central de Ajuda</a>
+              </div>     
+          </div>
+          <div class="row px-3 texto_footer d-flex">
+              
             <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
-                  <h6 class="fw-bold">Especializados</h6>
-                  <a href="">Unidades</a>
-                  <a href="">Documentos</a>
-                  <a href="">Coordenadores</a>       
+                  <h6 class="fw-bold">Docentes</h6>
+                  <a href="">Acesse Paginas</a>
+                  <a href="">Consulte chefes</a>
+                  <a href="">Coordenadores</a>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
-                <h6 class="fw-bold">Sistema</h6>
-                <a href="">Diretores</a>
-                <a href="">Centros</a>
-                <a href="">Investidores</a>
+                <h6 class="fw-bold">Especializados</h6>
+                <a href="">Unidades</a>
+                <a href="">Documentos</a>
+                <a href="">Coordenadores</a>       
         </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/image4.png" width="70%" alt="">
-                </div>
-                <div class="col-md-3 offset-md-3 offset-sm-1 col-sm-12 py-4 texto_footer fw-bold ">
-                    <a href="" class="px-1">Privacidade</a>
-                    <a href="" class="px-1">Acessibilidade</a>
-                    <a href="" class="px-1">Termos</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 offset-md-5" style="color: rgba(255, 255, 255, 0.5); font-size: 10px;">
-                    @ 2022 COG - Interprise System
-                </div>
-            </div>
-        </div>
+        <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
+              <h6 class="fw-bold">Sistema</h6>
+              <a href="">Diretores</a>
+              <a href="">Centros</a>
+              <a href="">Investidores</a>
+      </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                  <img src="img/image4.png" width="10px" alt="">
+              </div>
+              <div class="col-md-3 offset-md-3 offset-sm-1 col-sm-10 py-4 texto_footer fw-bold ">
+                  <a href="" class="px-1">Privacidade</a>
+                  <a href="" class="px-1">Acessibilidade</a>
+                  <a href="" class="px-1">Termos</a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 offset-md-5" style="color: rgba(255, 255, 255, 0.5); font-size: 10px;">
+                  @ 2022 COG - Interprise System
+              </div>
+          </div>
+      </div>
+       </footer>
     </body>
 </html>

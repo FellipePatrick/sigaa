@@ -4,3 +4,22 @@
         display: none;
     }
 }
+
+footer a {
+    text-decoration:none;
+    color: white;
+}
+
+button a {
+    text-decoration:none;
+    color: white;
+}
+
+button a:hover {
+    text-decoration:none;
+    color: white;
+}
+
+.place {
+    font-size: 15px;
+}
