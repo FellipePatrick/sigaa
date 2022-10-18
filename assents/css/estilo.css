@@ -66,3 +66,35 @@ H3 {
         display: none;
     }
     }
+
+
+ @media screen and (max-width: 1400px) {
+     .movee{
+        margin-left: 80px !important;
+     }
+     .moveeb{
+        margin-top: 5px;
+        margin-left: 50px !important;
+     }
+    }
+    
+ @media screen and (max-width: 991px) {
+    .movee{
+       margin-left: 100px !important;
+    }
+    .moveeb{
+       margin-top: 10px;
+       margin-left: 50px !important;
+    }
+   }
+   
+   @media screen and (max-width: 575px) {
+    .movee{
+       margin-left: 10px !important;
+    }
+    .moveeb{
+       margin-top: 0px !important;
+       margin-left: -30px !important;
+    }
+   }
+   
