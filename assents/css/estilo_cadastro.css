@@ -23,3 +23,9 @@ button a:hover {
 .place {
     font-size: 15px;
 }
+
+.imageseta {
+    margin-top: 20px;
+    height: auto;
+    width: 30px !important;
+}
