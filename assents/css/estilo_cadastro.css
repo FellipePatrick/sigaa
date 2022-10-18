@@ -29,3 +29,13 @@ button a:hover {
     height: auto;
     width: 30px !important;
 }
+
+.form-check {
+    padding: ;
+}
+
+
+.form-check-label {
+    margin-left: -50px;
+    width: 100px;
+}
