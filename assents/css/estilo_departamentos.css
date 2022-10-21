@@ -1,0 +1,12 @@
+.links {
+    height: 70%;
+}
+@media screen and (max-width: 768px) { 
+
+    h5 {
+        font-size: 15px;
+    }
+    .departrow li {
+        font-size: 10px;
+    }
+}
