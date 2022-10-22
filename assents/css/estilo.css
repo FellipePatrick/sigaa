@@ -100,6 +100,12 @@ H3 {
        margin-top: 10px;
        margin-left: 50px !important;
     }
+    .extensao {
+        display: none;
+    }
+    .extensaotext {
+        width: 50%;
+    }
    }
    
    @media screen and (max-width: 575px) {
@@ -110,5 +116,18 @@ H3 {
        margin-top: 0px !important;
        margin-left: -30px !important;
     }
+   
+
    }
    
+
+   @media screen and (max-width: 767px) {
+    .biologia {
+        margin-left: 100px;
+        width: 100%;
+    }
+    .cursoss {
+        width: 100%;
+    }
+
+   }
