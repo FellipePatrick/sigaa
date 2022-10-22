@@ -12,13 +12,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/assents/css/estilo.css">
         <link rel="stylesheet" href="/assents/css/calendario.css">
+        <link rel="stylesheet" href="/assents/css/acervo.css">
     </head>
     <header>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
               <div class="logo_nav fontes  fw-semibold  px-1">
-                <button type="button" class="btn btn-outline-light btn-sm px-1">login</button> 
-                </div>
+                <button type="button" class="btn btn-outline-light btn-sm px-1 botao-logo">
+                  <a href="pages/login.html">login</a>
+                </button>              
+                <a href="cadastro.html" class="acadastrar">cadastre-se</a>
+              </div>
               <div class="asd fontes fw-bold" style="font-size: 35px;">UFRN</div>
               <div class="botaoo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -27,8 +31,10 @@
               </div>
               <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                  <h6 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sistema Integrado de Gestão de <br> Atividades Acadêmicas</h6>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <h6 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                    Sistema Integrado de Gestão de <br> Atividades Acadêmicas</h6>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -92,19 +98,6 @@
               </div>
               <div class="  col-md-2 col-sm-2 itens movee ">
                 <div class="dropdown ">
-                  <p  class="fw-semibold text_infor">Assunto:</p>
-                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    --------
-                  </a>    
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Biologia</a></li>
-                    <li><a class="dropdown-item" href="#">Matematica</a></li>
-                    <li><a class="dropdown-item" href="#">Medicina</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="  col-md-2 col-sm-2 itens movee ">
-                <div class="dropdown ">
                   <p  class="fw-semibold text_infor">Titulo:</p>
                   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     --------
@@ -116,48 +109,10 @@
                   </ul>
                 </div>
               </div>
-              <div class="  col-md-2 col-sm-2 itens movee ">
-                <div class="dropdown ">
-                  <p  class="fw-semibold text_infor">Ano:</p>
-                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    --------
-                  </a>    
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">2022</a></li>
-                    <li><a class="dropdown-item" href="#">2021</a></li>
-                    <li><a class="dropdown-item" href="#">2020</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="  col-md-2 col-sm-2 itens movee ">
-                <div class="dropdown ">
-                  <p  class="fw-semibold text_infor">Editor:</p>
-                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    --------
-                  </a>    
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Folha São Paulo</a></li>
-                    <li><a class="dropdown-item" href="#">Globo</a></li>
-                    <li><a class="dropdown-item" href="#">Dr. Estranho</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="  col-md-2 col-sm-2 itens movee ">
-                <div class="dropdown ">
-                  <p  class="fw-semibold text_infor">Departamento:</p>
-                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    --------
-                  </a>    
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">BioFísica e Farmacologia</a></li>
-                    <li><a class="dropdown-item" href="#">Matematica</a></li>
-                    <li><a class="dropdown-item" href="#">Medicina</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class=" enviar  mx-5 d-flex ">
+              <div class=" enviar  mx-5 ">
                 <button type="button" class=" btn btn-primary btn-sm moveeb">enviar</button>
               </div>
+              </div>       
             </div>
             <div class="col-md-6">     
             </div>
@@ -169,113 +124,147 @@
             <div class="row">
                 <div class="offset-md-1 col-md-7">
                     <div class="row">
-                        <div class="col-md-4 py-5">
-                            <img src="/assents/img/arvores.png" width="" height="300" alt="">
+                        <div class="col-md-4 col-sm-12">
+                            <img class="imagem_livro" src="/assents/img/arvores.png" width="" height="300" alt="">
                         </div>
-                        <div class=" col-md-7 py-5 ">
+                        <div class=" col-md-8 col-sm-12  ">
                           <ul>
-                            <h4>Livro - Biologia no Mundo Morderno</h4>
-                            ******
-                          <h6>José de Alencar</h6>
-                          <li>O romance mais pessoal da carreira de Colleen Hoover, 
+                            <h5>Livro - Biologia no Mundo Morderno</h5>
+                            <div class="icones1">
+                              <i class="fa fa-star" style="color: yellow ;"></i>
+                              <i class="fa fa-star" style="color: yellow ;"></i>
+                              <i class="fa fa-star" style="color: yellow ;"></i>
+                              <i class="fa fa-star" style="color: yellow ;"></i>
+                              <i class="fa fa-star" style="color: rgb(87, 87, 83) ;"></i>
+                            </div>
+                          <h6 class="py-1">José de Alencar</h6>
+                           <p> O romance mais pessoal da carreira de Colleen Hoover, 
                             É assim que acaba discute temas como violência doméstica
                              e abuso psicológico de forma sensível e direta. &#160; Em É 
-                            assim que acaba, Colleen Hoover nos apresenta Lily, uma jovem...</li>
-                            <h6>Mais informações</h6>
-                            <h6>Conheça nossa polítca de  imprestimos</h6>
+                            assim que acaba, Colleen Hoover nos apresenta Lily, uma jovem...</p>
+                            <a href=""><h6>Mais informações</h6></a>
+                           <a href=""> <h6>Conheça nossa polítca de  imprestimos</h6></a>
                           </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 py-5">
+                <div class="col-md-4 col-sm-12 ">
                   <ul>
-                    <h4>Novas Aquiosoções - UFRN</h4>
+                    <h5>Novas Aquiosoções - UFRN</h5>
                     <li>Ciências Agrárias</li>
                     <li>Ciências Biológicas</li>
                     <li>Ciências da Saúde</li>
                     <li>Ciências Exatas e da Terra</li>
                     <li>Ciências Humanas</li>
-                    <li class="border-bottom">Ciências Sociais Aplicadas</li>
+                    <li>Ciências Sociais Aplicadas</li>
+                    <div class="border-bottom py-3"></div>
                   </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="livros">
-        <div class="container-fluid " style="background-color: #112039;
-              color: aliceblue;">
-          <div class="row justify-content-center">
-            <div class=" col-md-2">        
-                <i class="fa fa-book"></i>
+    <section class=" ">
+        <div class="container-fluid livros" style="background-color: #112039;
+              color: aliceblue;"> 
+          <div class="container">
+            <div class="row livros1">
+              <div class=" col-md-2 centralizar">        
+                  <div class="">
+                    <i class="icones fa fa-book"></i>
+                  </div>
+                  <h4>Organização dos Arquivos</h4>
+                  <p>Organizamos seus arquivos
+                    facilitando a localização.</p>
+                    <div class="linhas ">
+                      _____<br>_____
+                    </div>
+              </div>
+              <div class="col-md-2 centralizar">
+                <div class="">
+                  <i class=" icones fa Example of archive fa-archive"></i>
+                </div>
                 <h4>Organização dos Arquivos</h4>
-                <p>Organizamos seus arquivos
-                  facilitando a localização.</p>
-                  <h2>_____</h2><h2>_____</h2>
-            </div>
-            <div class="col-md-2">
-              <i class="fa Example of archive fa-archive"></i>
-              <h4>Organização dos Arquivos</h4>
-                <p>Organizamos seus arquivos
-                  facilitando a localização.</p>
-                  <h2>_____</h2><h2>_____</h2>
-            </div>
-            <div class="col-md-2">
-              <i class="fa  fa-file-pdf-o"></i>
-              <h4>Organização dos Arquivos</h4>
-                <p>Organizamos seus arquivos
-                  facilitando a localização.</p>
-                  <h2>_____</h2><h2>_____</h2>
-            </div>
-            <div class="col-md-2">
-              <i class="fa fa-file-o"></i>
-              <h4>Organização dos Arquivos</h4>
-                <p>Organizamos seus arquivos
-                  facilitando a localização.</p>
-                  <h2>_____</h2><h2>_____</h2>
+                  <p>Organizamos seus arquivos
+                    facilitando a localização.</p>
+                    <div class="linhas ">
+                      _____<br>_____
+                    </div>
+              </div>
+              <div class="col-md-2 centralizar">
+                <i class="icones fa  fa-file-pdf-o"></i>
+                <h4>Organização dos Arquivos</h4>
+                  <p>Organizamos seus arquivos
+                    facilitando a localização.</p>
+                    <div class="linhas ">
+                      _____<br>_____
+                    </div>
+              </div>
+              <div class="col-md-2 centralizar">
+                <i class="icones fa fa-file-o"></i>
+                <h4>Organização dos Arquivos</h4>
+                  <p>Organizamos seus arquivos
+                    facilitando a localização.</p>
+                    <div class="linhas ">
+                      _____<br>_____
+                    </div>
+              </div>
             </div>
           </div>
-        </div>
+          </div>
     </section>
     <section class="quantidade_livros py-5">
       <div class="container-fluid " style="background-color: #262728;
             color: aliceblue;">
-        <div class="row justify-content-center">
-          <div class=" col-md-2">  
-              <h6>MAIS DE</h6>      
+        <div class="container">
+          <div class="row quantidade">
+            <div class=" col-md-2 centralizar2">  
+                <h6 class="fw-bold">MAIS DE</h6>      
+                <h4>50.000</h4>
+                <h5>Livros</h5>
+                <p class="fw-semibold">De todas as categorias 
+                  de livros educacionais</p>
+                  <div class="linhas ">
+                    _____<br>_____
+                  </div>
+            </div>
+            <div class=" col-md-2 centralizar2">  
+              <h6 class="fw-bold">MAIS DE</h6>      
               <h4>50.000</h4>
               <h5>Livros</h5>
-              <p>De todas as categorias 
+              <p class="fw-semibold">De todas as categorias 
                 de livros educacionais</p>
-                <h2>_____</h2><h2>_____</h2>
+                <div class="linhas ">
+                  _____<br>_____
+                </div>
           </div>
-          <div class=" col-md-2">  
-            <h6>MAIS DE</h6>      
+          <div class=" col-md-2 centralizar2">  
+            <h6 class="fw-bold">MAIS DE</h6>      
             <h4>50.000</h4>
             <h5>Livros</h5>
-            <p>De todas as categorias 
+            <p class="fw-semibold">De todas as categorias 
               de livros educacionais</p>
-              <h2>_____</h2><h2>_____</h2>
+              <div class="linhas ">
+                _____<br>_____
+              </div>
         </div>
-        <div class=" col-md-2">  
-          <h6>MAIS DE</h6>      
-          <h4>50.000</h4>
-          <h5>Livros</h5>
-          <p>De todas as categorias 
-            de livros educacionais</p>
-            <h2>_____</h2><h2>_____</h2>
-      </div>
-         <div class=" col-md-2">  
-              <h6>MAIS DE</h6>      
-              <h4>50.000</h4>
-              <h5>Livros</h5>
-              <p>De todas as categorias 
-                de livros educacionais</p>
-                <h2>_____</h2><h2>_____</h2>
+           <div class=" col-md-2 centralizar2">  
+                <h6 class="fw-bold">MAIS DE</h6>      
+                <h4>50.000</h4>
+                <h5>Livros</h5>
+                <p class="fw-semibold">De todas as categorias 
+                  de livros educacionais</p>
+                  <div class="linhas ">
+                    _____<br>_____
+                  </div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="offset-md-5 col-md-3 offset-sm-4 col-sm-4">
+            <div class="botao ">
+              <button type="button" class="btn btn-primary btn-lg " width="25%">Conheça mais o Arcevo</button>
+            </div>
           </div>
-        </div>
-        <div class="botao align-items-center">
-
-          <button type="button" class="btn btn-primary btn-lg " width="25%">Large button</button>
         </div>
       </div>
   </section>
